@@ -1,0 +1,395 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "montserrat";
+}
+body{
+
+}
+.nav_bar_container{
+  position : absolute;
+  top : 0%;
+  left : 0%;
+  width : 100%;
+  height : 70px;
+  //background-color: #495F77
+}
+.logo{
+  cursor: pointer;
+  position : absolute;
+  top : 5px;
+  left : 5%;
+  height : 60px;
+  width : 60px;
+  background-image:url('logo.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.nav_menu{
+  display : flex;
+  position : absolute;
+  left : 70%;
+  height : 100%;
+  width : 25%;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24);
+}
+
+.menu{
+  position : absolute;
+  left : 60%;
+  height : 100%;
+  width : 35%;
+  align-items: center;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24);
+  display : flex;
+  text-align: center;
+  justify-content: space-around;
+}
+a {
+  float: left;
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #1E3245;
+}
+
+a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  height: 3px;
+  width: 0;
+  background: transparent;
+}
+
+.link:after {
+  transition: width .5s ease, background-color .5s ease, left .5s ease;
+}
+
+.link:hover:after {
+  width: 100%;
+  left: 0;
+  background: #1E3245;
+}
+
+.bg_images{
+  position : absolute;
+  top : 70px;
+  bottom : 0px;
+  left : 0%;
+  width : 100%;
+}
+#img1_glow{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity : 0;
+  -moz-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  box-shadow:0 0 50px 5px #fff;
+  z-index: 2;
+}
+#img2_glow{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity : 0;
+  -moz-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  box-shadow:0 0 50px 5px #fff;
+  z-index: 2;
+}
+#img3_glow{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity : 0;
+  -moz-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  box-shadow:0 0 50px 5px #fff;
+  z-index: 2;
+}
+#img4_glow{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity : 0;
+  -moz-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  box-shadow:0 0 50px 5px #fff;
+  z-index: 2;
+}
+#img1_filter{
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity : 0;
+  -moz-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+#img2_filter{
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity : 0;
+  -moz-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+#img3_filter{
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity : 0;
+  -moz-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+#img4_filter{
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity : 0;
+  -moz-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+.image1{
+  top: 0%;
+  left: 0%;
+  width : 50%;
+  height : 50%;
+  border-style: solid;
+  border-width: 0px;
+  border-right-width: 5px;
+  border-bottom-width: 5px;
+  border-color:#1E3245;
+  position: absolute;
+  background-image:url('gestion_img_big.jpg');
+  background-size: cover;
+}
+.image2{
+  top: 0%;
+  left: 50%;
+  width : 50%;
+  height : 50%;
+  border-style: solid;
+  border-width: 0px;
+  border-left-width: 5px;
+  border-bottom-width: 5px;
+  border-color: #1E3245;
+  position: absolute;
+  background-image:url('vente_img_big.jpg');
+  background-size: cover;
+}
+.image3{
+  top: 50%;
+  left: 0%;
+  width : 50%;
+  height : 50%;
+  border-style: solid;
+  border-width: 0px;
+  border-right-width: 5px;
+  border-top-width: 5px;
+  border-color: #1E3245;
+  position: absolute;
+  background-image:url('location_img_big.jpg');
+  background-size: cover;
+}
+.image4{
+  top: 50%;
+  left: 50%;
+  width : 50%;
+  height : 50%;
+  border-style: solid;
+  border-width: 0px;
+  border-left-width: 5px;
+  border-top-width: 5px;
+  border-color: #1E3245;
+  position: absolute;
+  background-image:url('entreprise_img_big.jpg');
+  background-size: cover;
+}
+.middle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.card{
+  visibility : hidden;
+  cursor: pointer;
+  width: 150px;
+  height: 75px;
+  z-index: 3;
+}
+.front,.back{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  transition: transform .6s linear;
+}
+.front{
+  border-radius: 10px;
+  background: #FAC69C;
+  color : #1E3245;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #1E3245;
+  transform: perspective(600px) rotateY(0deg);
+}
+.back{
+  border-radius: 10px;
+  background: #1E3245;
+  color : #FAC69C;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #FAC69C;
+  transform: perspective(600px) rotateY(180deg);
+}
+.sm{
+  margin: 20px 0;
+}
+.sm a{
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  color: #2c3e50;
+  font-size: 18px;
+  transition: 0.4s;
+  border-radius: 50%
+}
+.sm a:hover{
+  background: #2c3e50;
+  color: white;
+}
+.card:hover > .front{
+  transform: perspective(600px) rotateY(-180deg);
+}
+.card:hover > .back{
+  transform: perspective(600px) rotateY(0deg);
+}
+@media screen and (max-width: 992px) {
+  .image1 {
+    background-image:url('gestion_img_md.jpg');
+  }
+  .image2 {
+    background-image:url('vente_img_md.jpg');
+  }
+  .image3 {
+    background-image:url('location_img_md.jpg');
+  }
+  .image4 {
+    background-image:url('entreprise_img_md.jpg');
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav_bar_container{
+    height : 60px;
+  }
+  .bg_images{
+    top : 60px;
+  }
+  .logo{
+    width : 50px;
+    height : 50px;
+  }
+  .image1 {
+    top: 0%;
+    left: 0%;
+    width : 100%;
+    height : 25%;
+    border-width: 0px;
+    border-bottom-width: 5px;
+    background-image:url('gestion_img_sm.jpg');
+  }
+  .image2 {
+    top: 25%;
+    left: 0%;
+    width : 100%;
+    height : 25%;
+    border-width: 0px;
+    border-bottom-width: 5px;
+    background-image:url('vente_img_sm.jpg');
+  }
+  .image3 {
+    top: 50%;
+    left: 0%;
+    width : 100%;
+    height : 25%;
+    border-width: 0px;
+    border-bottom-width: 5px;
+    background-image:url('location_img_sm.jpg');
+  }
+  .image4 {
+    top: 75%;
+    left: 0%;
+    width : 100%;
+    height : 25%;
+    border-width: 0px;
+    background-image:url('entreprise_img_sm.jpg');
+  }
+}
+
+
+.btn1 {
+  cursor : pointer;
+  width: 150px;
+  height: 75px;
+  overflow: hidden;
+  position: absolute;
+  display : flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+  border-radius: 5px;
+  text-decoration: none;
+  -moz-transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  z-index : 10;
+  background-color: #FAC69C;
+}
+.btn1:hover {
+  box-shadow: 0px 0px 0px 2.5px #FAC69C, 0px 0px 0px 5px #1E3245, 0px 0px 0px 10px #FAC69C, 0px 0px 0px 10.5px #1E3245;
+  background: #1E3245;
+}
+.btn1:hover > a{
+  color: #FAC69C;
+}
