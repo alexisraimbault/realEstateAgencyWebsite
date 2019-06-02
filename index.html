@@ -7,15 +7,42 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
   </head>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(".hamburger").click(function(){
+                    $(".hamburger").toggleClass("is-active");
+                    $(".mobile_menu").toggleClass("is-active");
+                    $(".dark").toggleClass("is-active");
+                })
+                $(".dark").click(function(){
+                    $(".hamburger").toggleClass("is-active");
+                    $(".mobile_menu").toggleClass("is-active");
+                    $(".dark").toggleClass("is-active");
+                })
+            })
+  </script>
   <body>
-    <div class = "nav_bar_container">
-      <div class = "logo"></div>
-      <div class="menu">
-        <div class = "menu__group"><a class="link" href="#">Agence</a></div>
-        <div class = "menu__group"><a class="link" href="#">Contact</a></div>
+    <div class = "top_wrapper">
+      <div class = "nav_bar_container">
+        <div class = "logo"></div>
+        <div class="menu">
+          <div class = "menu__group"><a class="link" href="#">Agence</a></div>
+          <div class = "menu__group"><a class="link" href="#">Contact</a></div>
+        </div>
+        <div class="hamburger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+      </div>
+      <div class="mobile_menu">
+        <div class = "mobile_menu__group"><a class="link" href="#">Agence</a></div>
+        <div class = "mobile_menu__group"><a class="link" href="#">Contact</a></div>
       </div>
     </div>
     <div class = "bg_images">
+      <div class = "dark"></div>
       <div class = "image1" id = "img1">
         <div id = "img1_filter"></div><div id = "img1_glow"></div>
         <div class="btn btn1 middle"onmouseover="Javascript:highlight(1)" onmouseout="Javascript:unHighlight(1)">

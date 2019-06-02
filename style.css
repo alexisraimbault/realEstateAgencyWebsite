@@ -13,7 +13,8 @@ body{
   left : 0%;
   width : 100%;
   height : 70px;
-  //background-color: #495F77
+  z-index: 13;
+  background-color: white;
 }
 .logo{
   cursor: pointer;
@@ -85,6 +86,24 @@ a:after {
   bottom : 0px;
   left : 0%;
   width : 100%;
+}
+.dark{
+
+  position:absolute;
+  top : 60px;
+  bottom : 0px;
+  left : 0%;
+  width : 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity : 0;
+  -moz-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+.dark.is-active{
+  opacity: 1;
+  z-index: 11;
+}
 }
 #img1_glow{
   position: absolute;
@@ -319,6 +338,30 @@ a:after {
     background-image:url('entreprise_img_md.jpg');
   }
 }
+.hamburger{
+  position : absolute;
+  visibility : hidden;
+}
+.mobile_menu{
+  position: absolute;
+  visibility: visible;
+  transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  top : 60px;
+  height : 150px;
+  transform: translateY(-150px);
+  -moz-transition: translateY(-150px);
+  -webkit-transition:translateY(-150px);
+  -o-transition: translateY(-150px);
+  width : 100%;
+  background-color: white;
+  z-index: 12;
+  display : flex;
+  flex-direction : column;
+  justify-content: space-around;
+}
 @media screen and (max-width: 768px) {
   .nav_bar_container{
     height : 60px;
@@ -335,8 +378,6 @@ a:after {
     left: 0%;
     width : 100%;
     height : 25%;
-    border-width: 0px;
-    border-bottom-width: 5px;
     background-image:url('gestion_img_sm.jpg');
   }
   .image2 {
@@ -344,7 +385,9 @@ a:after {
     left: 0%;
     width : 100%;
     height : 25%;
-    border-width: 0px;
+    border-top-width: 5px;
+    border-left-width: 0px;
+    border-right-width: 0px;
     border-bottom-width: 5px;
     background-image:url('vente_img_sm.jpg');
   }
@@ -353,7 +396,8 @@ a:after {
     left: 0%;
     width : 100%;
     height : 25%;
-    border-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
     border-bottom-width: 5px;
     background-image:url('location_img_sm.jpg');
   }
@@ -362,9 +406,72 @@ a:after {
     left: 0%;
     width : 100%;
     height : 25%;
-    border-width: 0px;
     background-image:url('entreprise_img_sm.jpg');
   }
+  .menu{
+    visibility: hidden;
+  }
+  .hamburger{
+    visibility: visible;
+    margin :10px;
+    position:relative;
+    cursor: pointer;
+    top: 5%;
+    left : 86%;
+    width: 9%;
+    height: 80px;
+    z-index: 5;
+  }
+  .hamburger .line{
+    width: 90%;
+    height:5px;
+    display:block;
+    margin: 8px auto;
+    background-color : #1E3245;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    z-index: 5;
+}
+.hamburger.is-active .line:nth-child(2){
+    opacity :0;
+}
+.hamburger.is-active .line:nth-child(1){
+    transform: translateY(13px) rotate(45deg);
+    -moz-transition: translateY(13px) rotate(45deg);
+    -webkit-transition:translateY(13px) rotate(45deg);
+    -o-transition: translateY(13px) rotate(45deg);
+}
+.hamburger.is-active .line:nth-child(3){
+    transform: translateY(-13px) rotate(-45deg);
+    -moz-transition: translateY(-13px) rotate(-45deg);
+    -webkit-transition:translateY(-13px) rotate(-45deg);
+    -o-transition: translateY(-13px) rotate(-45deg);
+}
+.mobile_menu.is-active{
+  visibility: visible;
+  transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  top : -90px;
+  height : 150px;
+  transform: translateY(150px);
+  -moz-transition: translateY(150px);
+  -webkit-transition:translateY(150px);
+  -o-transition: translateY(150px);
+  width : 100%;
+  background-color: white;
+  z-index: 12;
+  display : flex;
+  flex-direction : column;
+  justify-content: space-around;
+}
+.mobile_menu__group{
+  padding-left: 20px;
+}
 }
 
 
