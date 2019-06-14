@@ -1,0 +1,512 @@
+/*
+Theme Name: custom_gfi
+Author: Alexis Raimbault
+Description: Template WordPress pour la page d'acceuil du site de GFI
+Version: 0.0.1
+Tags: responsive
+*/
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "montserrat";
+}
+body{
+
+}
+.site-content{
+  top : 32px;
+}
+.nav_bar_container{
+  position : absolute;
+  top : 0%;
+  left : 0%;
+  width : 100%;
+  height : 80px;
+  z-index: 13;
+  background-color: white;
+}
+.logo{
+  cursor: pointer;
+  position : absolute;
+  top : 0px;
+  left : 5%;
+  height : 80px;
+  width : 80px;
+  background-image:url('logo_jaune.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.nav_menu{
+  display : flex;
+  position : absolute;
+  left : 70%;
+  height : 100%;
+  width : 25%;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24);
+}
+
+.menu{
+  position : absolute;
+  left : 55%;
+  height : 100%;
+  width : 40%;
+  align-items: center;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24);
+  display : flex;
+  text-align: center;
+  background-color: white;
+  justify-content: space-around;
+}
+a {
+  float: left;
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #1E3245;
+}
+
+a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  height: 3px;
+  width: 0;
+  background: transparent;
+}
+
+.link:after {
+  transition: width .5s ease, background-color .5s ease, left .5s ease;
+}
+
+.link:hover:after {
+  width: 100%;
+  left: 0;
+  background: #1E3245;
+}
+
+.bg_images{
+  position : absolute;
+  top : 70px;
+  bottom : 0px;
+  left : 0%;
+  width : 100%;
+}
+.dark{
+
+  position:absolute;
+  top : 60px;
+  bottom : 0px;
+  left : 0%;
+  width : 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity : 0;
+  -moz-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+.dark.is-active{
+  opacity: 1;
+  z-index: 11;
+}
+#img1_glow{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity : 0;
+  -moz-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  box-shadow:0 0 50px 5px #fff;
+  z-index: 2;
+}
+#img2_glow{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity : 0;
+  -moz-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  box-shadow:0 0 50px 5px #fff;
+  z-index: 2;
+}
+#img3_glow{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity : 0;
+  -moz-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  box-shadow:0 0 50px 5px #fff;
+  z-index: 2;
+}
+#img4_glow{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity : 0;
+  -moz-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  box-shadow:0 0 50px 5px #fff;
+  z-index: 2;
+}
+#img1_filter{
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity : 0;
+  -moz-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+#img2_filter{
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity : 0;
+  -moz-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+#img3_filter{
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity : 0;
+  -moz-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+#img4_filter{
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity : 0;
+  -moz-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+.image1{
+  top: 0%;
+  left: 0%;
+  width : 50%;
+  height : 50%;
+  border-style: solid;
+  border-width: 0px;
+  border-right-width: 5px;
+  border-bottom-width: 5px;
+  border-color:#454545;
+  position: absolute;
+  background-image:url('gestion_img_big.jpg');
+  background-size: cover;
+}
+.image2{
+  top: 0%;
+  left: 50%;
+  width : 50%;
+  height : 50%;
+  border-style: solid;
+  border-width: 0px;
+  border-left-width: 5px;
+  border-bottom-width: 5px;
+  border-color: #454545;
+  position: absolute;
+  background-image:url('vente_img_big.jpg');
+  background-size: cover;
+}
+.image3{
+  top: 50%;
+  left: 0%;
+  width : 50%;
+  height : 50%;
+  border-style: solid;
+  border-width: 0px;
+  border-right-width: 5px;
+  border-top-width: 5px;
+  border-color: #454545;
+  position: absolute;
+  background-image:url('location_img_big.jpg');
+  background-size: cover;
+}
+.image4{
+  top: 50%;
+  left: 50%;
+  width : 50%;
+  height : 50%;
+  border-style: solid;
+  border-width: 0px;
+  border-left-width: 5px;
+  border-top-width: 5px;
+  border-color: #454545;
+  position: absolute;
+  background-image:url('entreprise_img_big.jpg');
+  background-size: cover;
+}
+.middle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.card{
+  visibility : hidden;
+  cursor: pointer;
+  width: 150px;
+  height: 75px;
+  z-index: 3;
+}
+.front,.back{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  transition: transform .6s linear;
+}
+.front{
+  border-radius: 10px;
+  background: #FAC69C;
+  color : #1E3245;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #1E3245;
+  transform: perspective(600px) rotateY(0deg);
+}
+.back{
+  border-radius: 10px;
+  background: #1E3245;
+  color : #FAC69C;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #FAC69C;
+  transform: perspective(600px) rotateY(180deg);
+}
+.sm{
+  margin: 20px 0;
+}
+.sm a{
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  color: #2c3e50;
+  font-size: 18px;
+  transition: 0.4s;
+  border-radius: 50%
+}
+.sm a:hover{
+  background: #2c3e50;
+  color: white;
+}
+.card:hover > .front{
+  transform: perspective(600px) rotateY(-180deg);
+}
+.card:hover > .back{
+  transform: perspective(600px) rotateY(0deg);
+}
+@media screen and (max-width: 992px) {
+  .image1 {
+    background-image:url('gestion_img_md.jpg');
+  }
+  .image2 {
+    background-image:url('vente_img_md.jpg');
+  }
+  .image3 {
+    background-image:url('location_img_md.jpg');
+  }
+  .image4 {
+    background-image:url('entreprise_img_md.jpg');
+  }
+}
+.hamburger{
+  position : absolute;
+  visibility : hidden;
+}
+.mobile_menu{
+  position: absolute;
+  visibility: visible;
+  transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  top : 60px;
+  height : 150px;
+  transform: translateY(-150px);
+  -moz-transition: translateY(-150px);
+  -webkit-transition:translateY(-150px);
+  -o-transition: translateY(-150px);
+  width : 100%;
+  background-color: white;
+  z-index: 12;
+  display : flex;
+  flex-direction : column;
+  justify-content: space-around;
+}
+@media screen and (max-width: 768px) {
+  .nav_bar_container{
+    height : 60px;
+  }
+  .bg_images{
+    top : 60px;
+  }
+  .logo{
+    width : 60px;
+    height : 60px;
+  }
+  .image1 {
+    top: 0%;
+    left: 0%;
+    width : 100%;
+    height : 25%;
+    background-image:url('gestion_img_sm.jpg');
+  }
+  .image2 {
+    top: 25%;
+    left: 0%;
+    width : 100%;
+    height : 25%;
+    border-top-width: 5px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 5px;
+    background-image:url('vente_img_sm.jpg');
+  }
+  .image3 {
+    top: 50%;
+    left: 0%;
+    width : 100%;
+    height : 25%;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 5px;
+    background-image:url('location_img_sm.jpg');
+  }
+  .image4 {
+    top: 75%;
+    left: 0%;
+    width : 100%;
+    height : 25%;
+    background-image:url('entreprise_img_sm.jpg');
+  }
+  .menu{
+    visibility: hidden;
+  }
+  .hamburger{
+    visibility: visible;
+    margin :10px;
+    position:relative;
+    cursor: pointer;
+    top: 5%;
+    left : 86%;
+    width: 9%;
+    height: 80px;
+    z-index: 5;
+  }
+  .hamburger .line{
+    width: 90%;
+    height:5px;
+    display:block;
+    margin: 8px auto;
+    background-color : #1E3245;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    z-index: 5;
+}
+.hamburger.is-active .line:nth-child(2){
+    opacity :0;
+}
+.hamburger.is-active .line:nth-child(1){
+    transform: translateY(13px) rotate(45deg);
+    -moz-transition: translateY(13px) rotate(45deg);
+    -webkit-transition:translateY(13px) rotate(45deg);
+    -o-transition: translateY(13px) rotate(45deg);
+}
+.hamburger.is-active .line:nth-child(3){
+    transform: translateY(-13px) rotate(-45deg);
+    -moz-transition: translateY(-13px) rotate(-45deg);
+    -webkit-transition:translateY(-13px) rotate(-45deg);
+    -o-transition: translateY(-13px) rotate(-45deg);
+}
+.mobile_menu.is-active{
+  visibility: visible;
+  transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  top : -90px;
+  height : 150px;
+  transform: translateY(150px);
+  -moz-transition: translateY(150px);
+  -webkit-transition:translateY(150px);
+  -o-transition: translateY(150px);
+  width : 100%;
+  background-color: white;
+  z-index: 12;
+  display : flex;
+  flex-direction : column;
+  justify-content: space-around;
+}
+.mobile_menu__group{
+  padding-left: 20px;
+}
+}
+
+
+.btn1 {
+  cursor : pointer;
+  width: 150px;
+  height: 75px;
+  overflow: hidden;
+  position: absolute;
+  display : flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+  border-radius: 5px;
+  text-decoration: none;
+  -moz-transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  z-index : 10;
+  background-color: #F7B722;
+}
+.btn1:hover {
+  box-shadow: 0px 0px 0px 2.5px #F7B722, 0px 0px 0px 5px #454545, 0px 0px 0px 10px #F7B722, 0px 0px 0px 10.5px #454545;
+  background: #454545;
+}
+.btn1:hover > a{
+  color: #F7B722;
+}

@@ -1,0 +1,243 @@
+<?php
+/**
+/**
+Template name: entreprise
+ */
+
+ */
+
+get_header();
+?>
+<div class = "top_wrapper">
+  <div class = "nav_bar_container">
+    <div class = "logo"></div>
+    <div class="menu">
+      <div class = "menu__group"><a class="link" href="#">Agence</a></div>
+      <div class = "menu__group"><a class="link" href="#">Contact</a></div>
+      <div class = "menu__group"><a class="link" href="#">Estimation</a></div>
+    </div>
+    <div class="hamburger">
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+    </div>
+  </div>
+  <div class="mobile_menu">
+    <div class = "mobile_menu__group"><a class="link" href="#">Agence</a></div>
+    <div class = "mobile_menu__group"><a class="link" href="#">Contact</a></div>
+    <div class = "mobile_menu__group"><a class="link" href="#">Estimation</a></div>
+  </div>
+</div>
+<div class = "bg_images" id = "index">
+  <div class = "dark"></div>
+  <div class = "image1" id = "img1">
+    <div id = "img1_filter"></div><div id = "img1_glow"></div>
+    <div class="btn btn1 middle"onmouseover="Javascript:highlight(1)" onmouseout="Javascript:unHighlight(1)">
+     <a href="#">Gestion</a>
+    </div>
+    <div class="card middle" onmouseover="Javascript:highlight(1)" onmouseout="Javascript:unHighlight(1)">
+      <div class="front">
+        <div class="middle">
+          <span>Gestion</span>
+        </div>
+      </div>
+      <div class="back">
+        <div class="back-content middle">
+          <div class="middle">
+            <div class = "icon1"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class = "image2" id = "img2">
+    <div id = "img2_filter"></div><div id = "img2_glow"></div>
+    <div class="btn btn1 middle"onmouseover="Javascript:highlight(2)" onmouseout="Javascript:unHighlight(2)">
+     <a href="#" >Vente</a>
+    </div>
+    <div class="card middle" onmouseover="Javascript:highlight(2)" onmouseout="Javascript:unHighlight(2)">
+      <div class="front">
+        <div class="middle">
+          <span>Vente</span>
+        </div>
+      </div>
+      <div class="back">
+        <div class="back-content middle">
+          <div class="middle">
+            <div class = "icon2"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class = "image3" id = "img3">
+    <div id = "img3_filter"></div><div id = "img3_glow"></div>
+    <div class="btn btn1 middle" onmouseover="Javascript:highlight(3)" onmouseout="Javascript:unHighlight(3)">
+     <a href="#">Location</a>
+    </div>
+    <div class="card middle" onmouseover="Javascript:highlight(3)" onmouseout="Javascript:unHighlight(3)">
+      <div class="front">
+        <div class="middle">
+          <span>Location</span>
+        </div>
+      </div>
+      <div class="back">
+        <div class="back-content middle">
+          <div class="middle">
+            <div class = "icon3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class = "image4" id = "img4">
+    <div id = "img4_filter"></div><div id = "img4_glow"></div>
+    <div class="btn btn1 middle" onmouseover="Javascript:highlight(4)" onmouseout="Javascript:unHighlight(4)">
+     <a href="#">Entreprise</a>
+    </div>
+    <div class="card middle" onmouseover="Javascript:highlight(4)" onmouseout="Javascript:unHighlight(4)">
+      <div class="front">
+        <div class="middle">
+          <span>Immobilier Entreprise</span>
+        </div>
+      </div>
+      <div class="back">
+        <div class="back-content middle">
+          <div class="middle">
+            <div class = "icon4"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  function highlight(n) {
+    switch (n) {
+      case 1:
+        $('#img2_filter').css({
+            opacity:1
+        })
+        $('#img3_filter').css({
+            opacity:1
+        })
+        $('#img4_filter').css({
+            opacity:1
+        })
+        $('#img1_glow').css({
+            opacity:1
+        })
+        break;
+      case 2:
+        $('#img1_filter').css({
+            opacity:1
+        })
+        $('#img3_filter').css({
+            opacity:1
+        })
+        $('#img4_filter').css({
+            opacity:1
+        })
+        $('#img2_glow').css({
+            opacity:1
+        })
+        break;
+      case 3:
+        $('#img1_filter').css({
+            opacity:1
+        })
+        $('#img2_filter').css({
+            opacity:1
+        })
+        $('#img4_filter').css({
+            opacity:1
+        })
+        $('#img3_glow').css({
+            opacity:1
+        })
+        break;
+      case 4:
+        $('#img1_filter').css({
+            opacity:1
+        })
+        $('#img2_filter').css({
+            opacity:1
+        })
+        $('#img3_filter').css({
+            opacity:1
+        })
+        $('#img4_glow').css({
+            opacity:1
+        })
+        break;
+      default :
+        break;
+    }
+  }
+  function unHighlight(n) {
+    switch (n) {
+      case 1:
+        $('#img2_filter').css({
+            opacity:0
+        })
+        $('#img3_filter').css({
+            opacity:0
+        })
+        $('#img4_filter').css({
+            opacity:0
+        })
+        $('#img1_glow').css({
+            opacity:0
+        })
+        break;
+      case 2:
+        $('#img1_filter').css({
+            opacity:0
+        })
+        $('#img3_filter').css({
+            opacity:0
+        })
+        $('#img4_filter').css({
+            opacity:0
+        })
+        $('#img2_glow').css({
+            opacity:0
+        })
+        break;
+      case 3:
+        $('#img1_filter').css({
+            opacity:0
+        })
+        $('#img2_filter').css({
+            opacity:0
+        })
+        $('#img4_filter').css({
+            opacity:0
+        })
+        $('#img3_glow').css({
+            opacity:0
+        })
+        break;
+      case 4:
+        $('#img1_filter').css({
+            opacity:0
+        })
+        $('#img2_filter').css({
+            opacity:0
+        })
+        $('#img3_filter').css({
+            opacity:0
+        })
+        $('#img4_glow').css({
+            opacity:0
+        })
+        break;
+      default :
+        break;
+    }
+  }
+</script>
+
+
+<?php
+get_footer();
