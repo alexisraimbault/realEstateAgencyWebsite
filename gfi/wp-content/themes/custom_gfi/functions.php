@@ -10,18 +10,44 @@ function woocommerce_product_custom_fields()
     // Custom Product Text Field
     woocommerce_wp_text_input(
         array(
-            'id' => '_custom_product_text_field',
-            'placeholder' => 'Custom Product Text Field',
-            'label' => __('Custom Product Text Field', 'woocommerce'),
+            'id' => '_ville',
+            'placeholder' => 'ex : Montreuil(93100)',
+            'label' => __('ville', 'woocommerce'),
             'desc_tip' => 'true'
         )
     );
     //Custom Product Number Field
     woocommerce_wp_text_input(
         array(
-            'id' => '_custom_product_number_field',
-            'placeholder' => 'Custom Product Number Field',
-            'label' => __('Custom Product Number Field', 'woocommerce'),
+            'id' => '_superficie',
+            'placeholder' => 'ex : 55',
+            'label' => __('superficie (m2)', 'woocommerce'),
+            'type' => 'number',
+            'custom_attributes' => array(
+                'step' => 'any',
+                'min' => '0'
+            )
+        )
+    );
+    //Custom Product Number Field
+    woocommerce_wp_text_input(
+        array(
+            'id' => '_nb_pieces',
+            'placeholder' => '',
+            'label' => __('nombre de pieces', 'woocommerce'),
+            'type' => 'number',
+            'custom_attributes' => array(
+                'step' => 'any',
+                'min' => '0'
+            )
+        )
+    );
+    //Custom Product Number Field
+    woocommerce_wp_text_input(
+        array(
+            'id' => '_nb_chambres',
+            'placeholder' => '',
+            'label' => __('nombre de chambres', 'woocommerce'),
             'type' => 'number',
             'custom_attributes' => array(
                 'step' => 'any',
@@ -32,9 +58,9 @@ function woocommerce_product_custom_fields()
     //Custom Product  Textarea
     woocommerce_wp_textarea_input(
         array(
-            'id' => '_custom_product_textarea',
-            'placeholder' => 'Custom Product Textarea',
-            'label' => __('Custom Product Textarea', 'woocommerce')
+            'id' => '_description',
+            'placeholder' => '',
+            'label' => __('description', 'woocommerce')
         )
     );
     echo '</div>';
@@ -43,16 +69,24 @@ function woocommerce_product_custom_fields()
 function woocommerce_product_custom_fields_save($post_id)
 {
     // Custom Product Text Field
-    $woocommerce_custom_product_text_field = $_POST['_custom_product_text_field'];
-    if (!empty($woocommerce_custom_product_text_field))
-        update_post_meta($post_id, '_custom_product_text_field', esc_attr($woocommerce_custom_product_text_field));
+    $woocommerce_ville = $_POST['_ville'];
+    if (!empty($woocommerce_ville))
+        update_post_meta($post_id, '_ville', esc_attr($woocommerce_ville));
 // Custom Product Number Field
-    $woocommerce_custom_product_number_field = $_POST['_custom_product_number_field'];
-    if (!empty($woocommerce_custom_product_number_field))
-        update_post_meta($post_id, '_custom_product_number_field', esc_attr($woocommerce_custom_product_number_field));
+    $woocommerce_superficie = $_POST['_superficie'];
+    if (!empty($woocommerce_superficie))
+        update_post_meta($post_id, '_superficie', esc_attr($woocommerce_superficie));
+// Custom Product Number Field
+    $woocommerce_nb_pieces = $_POST['_nb_pieces'];
+    if (!empty($woocommerce_nb_pieces))
+        update_post_meta($post_id, '_nb_pieces', esc_attr($woocommerce_nb_pieces));
+// Custom Product Number Field
+    $woocommerce_nb_chambres = $_POST['_nb_chambres'];
+    if (!empty($woocommerce_nb_chambres))
+        update_post_meta($post_id, '_nb_chambres', esc_attr($woocommerce_nb_chambres));
 // Custom Product Textarea Field
-    $woocommerce_custom_procut_textarea = $_POST['_custom_product_textarea'];
-    if (!empty($woocommerce_custom_procut_textarea))
-        update_post_meta($post_id, '_custom_product_textarea', esc_html($woocommerce_custom_procut_textarea));
+    $woocommerce_description = $_POST['_description'];
+    if (!empty($woocommerce_description))
+        update_post_meta($post_id, '_description', esc_html($woocommerce_description));
 }
 ?>

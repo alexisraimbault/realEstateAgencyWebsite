@@ -1,6 +1,6 @@
 <?php
 /**
-Template name: gestion
+Template name: annonces
  */
 
 get_header();
