@@ -1,9 +1,6 @@
 <?php
 /**
-/**
 Template name: location
- */
-
  */
 
 get_header();
@@ -32,82 +29,26 @@ get_header();
   <div class = "dark"></div>
   <div class = "image1" id = "img1">
     <div id = "img1_filter"></div><div id = "img1_glow"></div>
-    <div class="btn btn1 middle"onmouseover="Javascript:highlight(1)" onmouseout="Javascript:unHighlight(1)">
-     <a href="#">Gestion</a>
-    </div>
-    <div class="card middle" onmouseover="Javascript:highlight(1)" onmouseout="Javascript:unHighlight(1)">
-      <div class="front">
-        <div class="middle">
-          <span>Gestion</span>
-        </div>
-      </div>
-      <div class="back">
-        <div class="back-content middle">
-          <div class="middle">
-            <div class = "icon1"></div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div class="btn btn1 middle"onmouseover="Javascript:highlight(1)" onmouseout="Javascript:unHighlight(1)" onClick="document.location.href=''">
+     <a href="#">Appartements</a>
+   </div>
   </div>
   <div class = "image2" id = "img2">
     <div id = "img2_filter"></div><div id = "img2_glow"></div>
-    <div class="btn btn1 middle"onmouseover="Javascript:highlight(2)" onmouseout="Javascript:unHighlight(2)">
-     <a href="#" >Vente</a>
-    </div>
-    <div class="card middle" onmouseover="Javascript:highlight(2)" onmouseout="Javascript:unHighlight(2)">
-      <div class="front">
-        <div class="middle">
-          <span>Vente</span>
-        </div>
-      </div>
-      <div class="back">
-        <div class="back-content middle">
-          <div class="middle">
-            <div class = "icon2"></div>
-          </div>
-        </div>
-      </div>
+    <div class="btn btn1 middle"onmouseover="Javascript:highlight(2)" onmouseout="Javascript:unHighlight(2)" onClick="document.location.href=''">
+     <a href="#" >Maisons</a>
     </div>
   </div>
   <div class = "image3" id = "img3">
     <div id = "img3_filter"></div><div id = "img3_glow"></div>
-    <div class="btn btn1 middle" onmouseover="Javascript:highlight(3)" onmouseout="Javascript:unHighlight(3)">
-     <a href="#">Location</a>
-    </div>
-    <div class="card middle" onmouseover="Javascript:highlight(3)" onmouseout="Javascript:unHighlight(3)">
-      <div class="front">
-        <div class="middle">
-          <span>Location</span>
-        </div>
-      </div>
-      <div class="back">
-        <div class="back-content middle">
-          <div class="middle">
-            <div class = "icon3"></div>
-          </div>
-        </div>
-      </div>
+    <div class="btn btn1 middle" onmouseover="Javascript:highlight(3)" onmouseout="Javascript:unHighlight(3)" onClick="document.location.href=''">
+     <a href="#">Parkings</a>
     </div>
   </div>
   <div class = "image4" id = "img4">
     <div id = "img4_filter"></div><div id = "img4_glow"></div>
-    <div class="btn btn1 middle" onmouseover="Javascript:highlight(4)" onmouseout="Javascript:unHighlight(4)">
-     <a href="#">Entreprise</a>
-    </div>
-    <div class="card middle" onmouseover="Javascript:highlight(4)" onmouseout="Javascript:unHighlight(4)">
-      <div class="front">
-        <div class="middle">
-          <span>Immobilier Entreprise</span>
-        </div>
-      </div>
-      <div class="back">
-        <div class="back-content middle">
-          <div class="middle">
-            <div class = "icon4"></div>
-          </div>
-        </div>
-      </div>
+    <div class="btn btn1 middle" onmouseover="Javascript:highlight(4)" onmouseout="Javascript:unHighlight(4)" onClick="document.location.href=''">
+     <a href="#">Autres</a>
     </div>
   </div>
 </div>
