@@ -30,25 +30,25 @@ get_header();
   <div class = "image1" id = "img1">
     <div id = "img1_filter"></div><div id = "img1_glow"></div>
     <div class="btn btn1 middle"onmouseover="Javascript:highlight(1)" onmouseout="Javascript:unHighlight(1)" onClick="document.location.href='annonces?cat=entreprise_vente'">
-     <a href="#">Vente</a>
+     <a href="#" class="btn">Vente</a>
    </div>
   </div>
   <div class = "image2" id = "img2">
     <div id = "img2_filter"></div><div id = "img2_glow"></div>
     <div class="btn btn1 middle"onmouseover="Javascript:highlight(2)" onmouseout="Javascript:unHighlight(2)" onClick="document.location.href='annonces?cat=entreprise_location'">
-     <a href="#" >Location</a>
+     <a href="#" class="btn">Location</a>
     </div>
   </div>
   <div class = "image3" id = "img3">
     <div id = "img3_filter"></div><div id = "img3_glow"></div>
     <div class="btn btn1 middle" onmouseover="Javascript:highlight(3)" onmouseout="Javascript:unHighlight(3)" onClick="document.location.href=''">
-     <a href="#">Gestion</a>
+     <a href="#" class="btn">Gestion</a>
     </div>
   </div>
   <div class = "image4" id = "img4">
     <div id = "img4_filter"></div><div id = "img4_glow"></div>
     <div class="btn btn1 middle" onmouseover="Javascript:highlight(4)" onmouseout="Javascript:unHighlight(4)" onClick="document.location.href='annonces?cat=entreprise_investissement'">
-     <a href="#">Investissements</a>
+     <a href="#" class="btn">Investissements</a>
     </div>
   </div>
 </div>
@@ -182,3 +182,4 @@ get_header();
 
 <?php
 get_footer();
+?>

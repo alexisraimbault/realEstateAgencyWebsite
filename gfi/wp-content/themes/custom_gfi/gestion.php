@@ -25,8 +25,8 @@ get_header();
     <div class = "mobile_menu__group"><a class="link" href="#">Estimation</a></div>
   </div>
 </div>
-<div class = "bg_images" id = "index">
-  <div class="annonces_list">
+<div class = "bg_images container" id = "index">
+  <div class="annonces_list row">
   <?php
   $category = $_GET['cat'];
   $args = array(
@@ -36,7 +36,7 @@ get_header();
           );
   $loop = new WP_Query( $args ); if ( $loop->have_posts() ) {
     while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
-    <div class="annonce">
+    <div class="annonce col-xs-12 col-sm-6 col-md-4">
         <?php $featured_image = wp_get_attachment_image_src( get_post_thumbnail_id($loop->post->ID)); ?>
         <?php if($featured_image) { ?>
         <div class = "annonce_img_wrapper">
@@ -81,3 +81,4 @@ get_header();
 
 <?php
 get_footer();
+?>
