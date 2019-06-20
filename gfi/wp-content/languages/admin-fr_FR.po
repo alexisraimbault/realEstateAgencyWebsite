@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.2.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-06-13 17:32:08+0000\n"
+"PO-Revision-Date: 2019-06-20 11:21:31+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -92,8 +92,8 @@ msgid "Improvements for Everyone"
 msgstr "Des améliorations pour tout le monde"
 
 #: wp-admin/about.php:154
-msgid "This administrator-focused update will let you safely fix or manage fatal errors without requiring developer time. It features better handling of the so-called “white screen of death”, and a way to enter recovery mode, which pauses error-causing plugins or themes."
-msgstr "Cette mise à jour centrée sur l’administration va vous permettre de corriger ou gérer sans risque les erreurs fatales sans vous demander de temps de développement. Une meilleure prise en charge des fameux « écrans blancs de la mort » vous est proposée, ainsi qu’une manière de passer en mode de récupération, ce qui permet de mettre en pause les extensions ou thèmes qui sont en erreur."
+msgid "This administrator-focused update will let you safely fix or manage fatal errors without requiring a developer. It features better handling of the so-called “white screen of death”, and a way to enter recovery mode, which pauses error-causing plugins or themes."
+msgstr "Cette mise à jour centrée sur l’administration va vous permettre de corriger ou gérer sans risque les erreurs fatales sans vous demander de temps de développement. Une meilleure prise en charge des fameux « écrans blancs de la mort » vous est proposée, ainsi qu’une manière de passer en mode de récupération, ce qui permet de mettre en pause les extensions ou thèmes qui posent des problèmes."
 
 #: wp-admin/about.php:153
 msgid "PHP Error Protection"

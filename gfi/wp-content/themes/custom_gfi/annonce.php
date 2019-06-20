@@ -36,6 +36,34 @@ get_header();
   $loop = new WP_Query( $args ); if ( $loop->have_posts() ) {
     while ( $loop->have_posts() ) : $loop->the_post(); global $product;
     $images_ids = $product-> get_gallery_image_ids();?>
+    <div class = annonce_page_container>
+    <div class = "top_desc_container">
+      <div class = "dots_top">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+      <div class = "annonce_page_title"><?php the_title(); ?></div>
+      <?php $ville = get_post_meta(get_the_ID(), '_ville', true);
+      if( $ville ){?>
+        <div class = "annonce_page_ville"><?php echo $ville ?></div>
+      <?php } ?>
+      <div class="annonce_page_line"></div>
+      <?php $superficie = get_post_meta(get_the_ID(), '_superficie', true);
+      if( $superficie ){?>
+        <div class = "annonce_page_superficie"><?php echo $superficie ?> m<sup>2</sup></div>
+      <?php } ?>
+      <div class="annonce_page_price"><?php echo $product->get_price_html(); ?></div>
+      <div class = "dots_bottom">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
     <div class = "slide_container">
     <?php for($i = 0, $j = count($images_ids); $i < $j;$i++ ){
     ?>
@@ -43,12 +71,6 @@ get_header();
     <img src="<?php echo wp_get_attachment_image_url($images_ids[$i], 'full');?>" class = "slide_img">
     </div>
     <?php } ?>
-    <?php $featured_image = wp_get_attachment_image_src( get_post_thumbnail_id($loop->post->ID)); ?>
-    <?php if($featured_image) { ?>
-    <div class="slide_img_wrapper">
-    <img src="<?php echo get_the_post_thumbnail_url($loop->post->ID); ?>" class="slide_img">
-    </div>
-    <?php }?>
     </div>
     <div class = "preview_container">
     <?php for($i = 0, $j = count($images_ids); $i < $j;$i++ ){
@@ -57,13 +79,8 @@ get_header();
         <img src="<?php echo wp_get_attachment_image_url($images_ids[$i]);?>" class = "slide_preview">
       </div>
     <?php } ?>
-    <?php $featured_image = wp_get_attachment_image_src( get_post_thumbnail_id($loop->post->ID), 'thumbnail'); ?>
-    <?php if($featured_image) { ?>
-      <div class="slide_preview_wrapper" onclick="showSlide(<?php echo count($images_ids) ?>)">
-        <img src="<?php echo get_the_post_thumbnail_url($loop->post->ID); ?>" class="slide_preview">
-      </div>
-    <?php }?>
     </div>
+  </div>
   <?php endwhile;
 		} else {
 			echo __( 'No products found' );
@@ -72,7 +89,8 @@ get_header();
     ?>
   </div>
 <script>
-var slideIndex = 1;
+var slideIndex = 0;
+showSlide(slideIndex);
 function showSlide(n) {
   slideIndex = n
   var i;
