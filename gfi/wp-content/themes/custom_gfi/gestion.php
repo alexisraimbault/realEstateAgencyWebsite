@@ -26,59 +26,81 @@ get_header();
   </div>
 </div>
 <div class = "bg_images container" id = "index">
-  <div class="annonces_list row">
-  <?php
-  $category = $_GET['cat'];
-  $args = array(
-            'post_type' => 'product',
-            'posts_per_page' =>12,
-            'product_cat' =>  $category,
-          );
-  $loop = new WP_Query( $args ); if ( $loop->have_posts() ) {
-    while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
-    <div class="annonce col-xs-12 col-sm-6 col-md-4">
-        <?php $featured_image = wp_get_attachment_image_src( get_post_thumbnail_id($loop->post->ID)); ?>
-        <?php if($featured_image) { ?>
-        <div class = "annonce_img_wrapper">
-        <img src="<?php echo get_the_post_thumbnail_url($loop->post->ID); ?>" class="annonce_img">
+  <div class = "gestion_page_container">
+    <diV class = "gestion_page_flex_container">
+      <div class = "gestion_pad">
+        <div class = "gestion_pad_1_image"></div>
+        <div class = "gestion_pad_content">
+          <div class = "gestion_pad_title">GESTION LOCATIVE</div>
+          <div class = "gestion_pad_subtitle">Confiez la gestion de votre bien à GFI CONSEIL</div>
+          <div class = "gestion_pad_line"></div>
+          <div class = "gestion_pad_text">
+            En vous tournant vers GFI CONSEIL, vous bénéficiez de toute notre expérience en matière d’administration de biens immobiliers à usage d’habitation, commerciaux et industriels.
+          </div>
+          <div class = "gestion_pad_text">
+            Nous vous aidons à rentabiliser au mieux votre investissement et vous conseillons sur toutes les questions d’ordres fiscales et patrimoniales.
+          </div>
+          <div class = "gestion_pad_subtitle">L'intérêt principal de la gestion immobilière : Vous apporter une vraie tranquillité.</div>
         </div>
-        <?php } ?>
-        <div class = "annonce_details">
-        <div class = "annonce_title"><?php the_title(); ?></div>
-        <?php $ville = get_post_meta(get_the_ID(), '_ville', true);
-        if( $ville ){?>
-          <div class = "annonce_ville"><?php echo $ville ?></div>
-        <?php } ?>
-        <?php $description = get_post_meta(get_the_ID(), '_description', true);
-        if( $description ){?>
-          <div class = "annonce_description"><?php echo $description ?></div>
-        <?php } ?>
-        <?php $superficie = get_post_meta(get_the_ID(), '_superficie', true);
-        if( $superficie ){?>
-          <div class = "annonce_superficie"><?php echo $superficie ?> m2</div>
-        <?php } ?>
-        <?php $nb_pieces = get_post_meta(get_the_ID(), '_nb_pieces', true);
-        if( $nb_pieces ){?>
-          <div class = "annonce_pieces"><?php echo $nb_pieces ?> pieces</div>
-        <?php } ?>
-        <?php $nb_chambres = get_post_meta(get_the_ID(), '_nb_chambres', true);
-        if( $nb_chambres ){?>
-          <div class = "annonce_chambres"><?php echo $nb_chambres ?> chambres</div>
-        <?php } ?>
-        <div class="annonce_price"><?php echo $product->get_price_html(); ?></div>
       </div>
-  </div>
-  <?php endwhile;
-		} else {
-			echo __( 'No products found' );
-		}
-		wp_reset_postdata();
-    ?>
+      <div class = "gestion_pad2">
+        <div class = "gestion_pad_2_image"></div>
+        <div class = "gestion_pad_content">
+          <div class = "gestion_pad_subtitle">La gestion courante</div>
+          <div class = "gestion_pad_line"></div>
+          <div class = "gestion_pad_text">
+            En nous déléguant la gestion de votre bien, bon nombre de vos démarches disparaîtront et vous aurez beaucoup moins de temps à consacrer à ces tâches.
+          </div>
+          <div class = "gestion_pad_text">
+            En effet, nous deviendrons le seul intermédiaire entre vous et le locataire.
+          </div>
+          <div class = "gestion_pad_text">
+            Le locataire ne connaîtra alors que GFI CONSEIL.
+          </div>
+          <div class = "gestion_pad_text">
+            Il nous règlera son loyer qui vous sera reversé mensuellement accompagné d’un compte rendu de gérance.
+          </div>
+        </div>
+      </div>
+        <div class = "gestion_pad">
+          <div class = "gestion_pad_subtitle">Les problèmes techniques</div>
+          <div class = "gestion_pad_line"></div>
+          <div class = "gestion_pad_text">
+            Vous n'aurez jamais à vous déplacer ni à gérer les réparations dans le logement.
+          </div>
+          <div class = "gestion_pad_text">
+            En cas de problème, nous mandatons les entreprises* qui se rendent sur place afin d’établir un devis.
+          </div>
+          <div class = "gestion_pad_text">
+            Ce devis vous est soumis et nous faisons réaliser après avoir obtenu votre accord les réparations nécessaires.
+          </div>
+          <div class = "gestion_pad_text">
+            Bref, vous n'aurez rien à faire !
+          </div>
+          <div class = "aster">
+            * nous avons rigoureusement sélectionnées les entreprises avec lesquelles nous travaillons pour leur bon rapport qualité prix.
+          </div>
+        </div>
+        <div class = "gestion_pad2">
+          <div class = "gestion_pad_subtitle">Les aspects juridiques et financiers</div>
+          <div class = "gestion_pad_line"></div>
+          <div class = "gestion_pad_text">
+            Tous les aspects techniques et juridiques de la location et gestion de votre patrimoine vous seront également épargnés.
+          </div>
+          <div class = "gestion_pad_text">
+            Nous nous chargeons d'établir les contrats de location, de dresser les états des lieux d’entrée et de sortie, de gérer les congés des locataires, de payer les charges de copropriété et d’effectuer leur régularisation, de réviser les loyers, de suivre les procédures contentieuses etc…
+          </div>
+          <div class = "gestion_pad_text">
+            Nous pouvons également vous proposer une garantie contre les loyers impayés et ce pour les biens à usage d’habitation. De plus, nous vous accompagnons pour toutes vos démarches et déclarations auprès des services fiscaux.
+          </div>
+        </div>
+      </div>
+      <div class = "gestion_ccl">
+        Alors n’hésitez plus ! Rejoignez GFI CONSEIL un cabinet d’administration de biens connu et reconnu, car 35 ans d’expérience feront toujours la différence !
+      </div>
+    </div>
   </div>
 </div>
-
-
-
 <?php
 get_footer();
 ?>

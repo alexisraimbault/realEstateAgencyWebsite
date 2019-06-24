@@ -98,6 +98,7 @@ a:after {
   bottom : 0px;
   left : 0%;
   width : 100%;
+  padding:0px;
 }
 .dark{
 
@@ -762,13 +763,9 @@ img{
   transition: all 0.7s;
   padding-top : 10px;
   padding-bottom : 10px;
-  margin-left : 10px;
   margin-top : 111px;
-  text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24);
 }
 .rdv_title{
   padding-top : 10px;
@@ -832,4 +829,65 @@ img{
     margin-top : 30px;
     margin-left : 0px;
   }
+}
+.gestion_page_container{
+  display : flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width : 100%
+}
+.gestion_page_flex_container{
+  margin-bottom: 30px;
+  width : 100%;
+  display : flex;
+  flex-direction: column;
+}
+.gestion_pad{
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top:20px;
+  padding-bottom: 20px;
+}
+.gestion_pad2{
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top:20px;
+  padding-bottom: 20px;
+  background-color: #E1E1E1;
+}
+.gestion_subpad{
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+.gestion_pad_text{
+  font-size: 1.2em;
+  padding-top : 8px;
+  padding-bottom : 8px;
+}
+.gestion_pad_subtitle{
+  padding-top:11px;
+  font-size: 1.5em;
+}
+.gestion_pad_title{
+  font-size: 1.6em;
+  text-transform: uppercase;
+  padding-bottom : 33px;
+}
+.gestion_pad_line{
+  height : 13px;
+  width : 75px;
+  margin-top : 11px;
+  margin-bottom : 22px;
+  background-color: #F7B722;
+}
+.aster{
+  font-size: 0.9em;
+  padding-top : 22px;
+}
+.gestion_ccl{
+  padding-left: 15%;
+  padding-right: 15%;
+  font-size: 1.5em;
+  padding-bottom : 33px;
 }
