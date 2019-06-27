@@ -41,25 +41,25 @@ get_header();
   <div class = "image1" id = "img1">
     <div id = "img1_filter"></div><div id = "img1_glow"></div>
     <div class="btn btn1 middle"onmouseover="Javascript:highlight(1)" onmouseout="Javascript:unHighlight(1)" onClick="document.location.href='vente'">
-     <a href="#" class="btn">je</a>
+     <a href="#" class="btn">vente</a>
    </div>
   </div>
   <div class = "image2" id = "img2">
     <div id = "img2_filter"></div><div id = "img2_glow"></div>
     <div class="btn btn1 middle"onmouseover="Javascript:highlight(2)" onmouseout="Javascript:unHighlight(2)" onClick="document.location.href='location'">
-     <a href="#" class="btn">t'</a>
+     <a href="#" class="btn">location</a>
     </div>
   </div>
   <div class = "image3" id = "img3">
     <div id = "img3_filter"></div><div id = "img3_glow"></div>
     <div class="btn btn1 middle" onmouseover="Javascript:highlight(3)" onmouseout="Javascript:unHighlight(3)" onClick="document.location.href='entreprise'">
-     <a href="#" class="btn">aime</a>
+     <a href="#" class="btn">entreprise</a>
     </div>
   </div>
   <div class = "image4" id = "img4">
     <div id = "img4_filter"></div><div id = "img4_glow"></div>
     <div class="btn btn1 middle" onmouseover="Javascript:highlight(4)" onmouseout="Javascript:unHighlight(4)" onClick="document.location.href='gestion'">
-     <a href="#" class="btn">clouclou</a>
+     <a href="#" class="btn">gestion</a>
     </div>
   </div>
 </div>

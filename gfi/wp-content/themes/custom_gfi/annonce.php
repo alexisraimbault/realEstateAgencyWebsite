@@ -9,8 +9,8 @@ get_header();
   <div class = "nav_bar_container">
     <div class = "logo" onClick="document.location.href='acceuil'"></div>
     <div class="menu">
-      <div class = "menu__group"><a class="link" href="#">Agence</a></div>
-      <div class = "menu__group"><a class="link" href="#">Contact</a></div>
+      <div class = "menu__group"><a class="link" href="agence">Agence</a></div>
+      <div class = "menu__group"><a class="link" href="agence#contact">Contact</a></div>
       <div class = "menu__group"><a class="link" href="#">Estimation</a></div>
     </div>
     <div class="hamburger">
@@ -56,7 +56,11 @@ get_header();
           <div class = "rdv_title">prendre rendez-vous</div>
           <div class = "rdv_line"></div>
           <div class = "rdv_agence">GFI conseil</div>
-          <div class = "rdv_tel">
+          <div class = "rdv_mess" onClick="document.location.href='agence#contact'">
+            <div class = "rdv_mess_logo"></div>
+            <div class = "rdv_mess_contact">NOUS CONTACTER</div>
+          </div>
+          <div class = "rdv_tel" >
             <div class = "rdv_tel_logo"></div>
             <div class = "rdv_tel_num">01 48 59 84 84</div>
           </div>
