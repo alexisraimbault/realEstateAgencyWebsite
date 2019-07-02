@@ -64,7 +64,7 @@
 			<div class = "footer_socials">
 				réseaux sociaux
 			</div>
-			<div class = "footer_legals">
+			<div class = "footer_legals" onClick="document.location.href='legals'">
 				mentions légales
 			</div>
 		</div>

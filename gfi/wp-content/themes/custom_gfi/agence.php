@@ -41,6 +41,45 @@ get_header();
           </div>
         </div>
       </div>
+
+      <div class = "gestion_pad2">
+        <div class = "gestion_pad_1_image"></div>
+        <div class = "gestion_pad_content">
+          <div class = "gestion_pad_subtitle">QUI SOMMES-NOUS</div>
+          <div class = "gestion_pad_line"></div>
+          <div class = "gestion_pad_text">
+            DEPUIS 35 ANS, notre agence, GFI CONSEIL gère, loue et vend tous les types de biens immobiliers à Montreuil et ses environs.
+          </div>
+          <div class = "gestion_pad_text">
+          Nous sommes installés dans un immeuble indépendant sur trois niveaux, au 36, rue de Paris, à l’angle de la place du Marché et au pied de la Station de Métro « Croix de Chavaux ».
+          </div>
+        </div>
+      </div>
+      <div class = "gestion_pad">
+        <div class = "gestion_pad_1_image"></div>
+        <div class = "gestion_pad_content">
+          <div class = "gestion_pad_subtitle">NOS SERVICES</div>
+          <div class = "gestion_pad_line"></div>
+          <div class = "gestion_pad_text">
+            NOTRE SERVICE TRANSACTION est composé d’une équipe de 4 personnes spécialisées dans la vente de biens à usage d’habitation. Avec une connaissance pointue du marché local. Pour mieux servir nos clients, ce service est doté d’un service de HOME STAGING interne avec une personne dédiée.
+          </div>
+          <div class = "gestion_pad_text">
+            NOTRE SERVICE GESTION DE PATRIMOINE est composé de 7 personnes qui gèrent et louent le portefeuille de biens immobiliers composé d’appartements, de maisons, de locaux commerciaux, de locaux industriels et de bureaux.
+          </div>
+          <div class = "gestion_pad_text">
+            NOTRE SERVICE IMMOBILIER D'ENTREPRISE est une particularité historique de GFI CONSEIL. Nous louons et vendons des bureaux, des entrepôts, des lofts, des ateliers, des droits au bail et des commerces.
+          </div>
+          <div class = "gestion_pad_text">
+            NOTRE SERVICE PROMOTION IMMOBILIÉRE ET MARCHANDS DE BIEN
+            Nos deux spécialistes dédiés sont en charge de cette activité.
+          </div>
+          <div class = "gestion_pad_text">
+            L'accueil de l'agence : qu’il soit physique ou téléphonique c’est le poste le plus sensible car c’est votre premier contact avec nous.
+            Expérimentée et professionnelle, Hélène GREETHAM vous reçoit, répond à vos questions et vous oriente dans vos démarches.
+          </div>
+        </div>
+      </div>
+
       <div class = "gestion_pad2">
         <div class = "gestion_pad_2_image"></div>
         <div class = "gestion_pad_content">

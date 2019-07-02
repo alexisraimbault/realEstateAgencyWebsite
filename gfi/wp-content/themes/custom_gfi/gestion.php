@@ -96,7 +96,7 @@ get_header();
         </div>
       </div>
       <div class = "gestion_ccl">
-        Alors n’hésitez plus ! Rejoignez GFI CONSEIL un cabinet d’administration de biens connu et reconnu, car 35 ans d’expérience feront toujours la différence !
+        Alors n’hésitez plus ! Rejoignez GFI CONSEIL un cabinet d’administration de biens connu et reconnu, car 30 ans d’expérience feront toujours la différence !
       </div>
     </div>
 <?php
