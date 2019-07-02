@@ -99,8 +99,6 @@ get_header();
         Alors n’hésitez plus ! Rejoignez GFI CONSEIL un cabinet d’administration de biens connu et reconnu, car 35 ans d’expérience feront toujours la différence !
       </div>
     </div>
-  </div>
-</div>
 <?php
 get_footer();
 ?>

@@ -14,7 +14,7 @@
 ?>
 
 
-		<div class = footer>
+		<div class = "footer col-xs-12 col-sm-12 col-md-12">
 			<div class = "footer_container">
 				<div class = "footer_agence">
 					<div class = "footer_agence_desc">
@@ -36,32 +36,28 @@
 				</div>
 				<div class = "footer_cats">
 					<div class = "footer_cat">
-						<div class ="footer_cat_tilte">vente</div>
-						<div class ="footer_cat_elt">maisons</div>
-						<div class ="footer_cat_elt">appartements</div>
-						<div class ="footer_cat_elt">parkings</div>
-						<div class ="footer_cat_elt">autres</div>
+						<div class ="footer_cat_tilte" onClick="document.location.href='vente'">vente</div>
+						<div class ="footer_cat_elt" onClick="document.location.href='annonces?cat=vente_maison'">maisons</div>
+						<div class ="footer_cat_elt" onClick="document.location.href='annonces?cat=vente_appartement'">appartements</div>
+						<div class ="footer_cat_elt" onClick="document.location.href='annonces?cat=vente_investissement'">investissements</div>
+						<div class ="footer_cat_elt"  onClick="document.location.href='annonces?cat=vente_autres'">autres</div>
 					</div>
 					<div class = "footer_cat">
-						<div class ="footer_cat_tilte">location</div>
-						<div class ="footer_cat_elt">maisons</div>
-						<div class ="footer_cat_elt">appartements</div>
-						<div class ="footer_cat_elt">parkings</div>
-						<div class ="footer_cat_elt">autres</div>
+						<div class ="footer_cat_tilte" onClick="document.location.href='location'">location</div>
+						<div class ="footer_cat_elt" onClick="document.location.href='annonces?cat=location_appartement'">appartements</div>
+						<div class ="footer_cat_elt" onClick="document.location.href='annonces?cat=location_maison'">maisons</div>
+						<div class ="footer_cat_elt" onClick="document.location.href='annonces?cat=location_parking'">parkings</div>
+						<div class ="footer_cat_elt" onClick="document.location.href='annonces?cat=location_autres'">autres</div>
 					</div>
 					<div class = "footer_cat">
-						<div class ="footer_cat_tilte">entreprise</div>
-						<div class ="footer_cat_elt">maisons</div>
-						<div class ="footer_cat_elt">appartements</div>
-						<div class ="footer_cat_elt">parkings</div>
-						<div class ="footer_cat_elt">autres</div>
+						<div class ="footer_cat_tilte" onClick="document.location.href='entreprise'">entreprise</div>
+						<div class ="footer_cat_elt" onClick="document.location.href='annonces?cat=entreprise_vente'">vente</div>
+						<div class ="footer_cat_elt" onClick="document.location.href='annonces?cat=entreprise_location'">location</div>
+						<div class ="footer_cat_elt" onClick="document.location.href=''">gestion</div>
+						<div class ="footer_cat_elt" onClick="document.location.href='annonces?cat=entreprise_investissement'">Investissements</div>
 					</div>
 					<div class = "footer_cat">
-						<div class ="footer_cat_tilte">gestion</div>
-						<div class ="footer_cat_elt">maisons</div>
-						<div class ="footer_cat_elt">appartements</div>
-						<div class ="footer_cat_elt">parkings</div>
-						<div class ="footer_cat_elt">autres</div>
+						<div class ="footer_cat_tilte" onClick="document.location.href='gestion'">gestion</div>
 					</div>
 				</div>
 			</div>

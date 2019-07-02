@@ -36,7 +36,7 @@ get_header();
           );
   $loop = new WP_Query( $args ); if ( $loop->have_posts() ) {
     while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
-    <div class="col-xs-12 col-sm-6 col-md-4"><div class = "annonce" onClick="document.location.href='annonce?id=<?php echo get_the_ID(); ?>'">
+    <div class="col-xs-12 col-sm-6 col-md-3"><div class = "annonce" onClick="document.location.href='annonce?id=<?php echo get_the_ID(); ?>'">
         <?php $featured_image = wp_get_attachment_image_src( get_post_thumbnail_id($loop->post->ID)); ?>
         <?php if($featured_image) { ?>
         <div class = "annonce_img_wrapper">
@@ -64,8 +64,6 @@ get_header();
 		wp_reset_postdata();
     ?>
   </section>
-</div>
-
 
 
 <?php

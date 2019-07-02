@@ -52,6 +52,8 @@ get_header();
     </div>
   </div>
 </div>
+</div>
+<div class = "footer_hide">
 <script type="text/javascript">
   function highlight(n) {
     switch (n) {

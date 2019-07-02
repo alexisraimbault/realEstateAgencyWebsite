@@ -510,11 +510,9 @@ a:hover {
 }
 
 .annonces_list{
-  top: 0%;
-  left: 15%;
+  margin-left: 15%;
   width : 70%;
   height : 100%;
-  position: absolute;
   padding-top : 2%;
 }
 .annonce{
@@ -548,7 +546,7 @@ a:hover {
   top : 0%;
   left : 0%;
   width : 100%;
-  height : 250px;
+  height : 200px;
 }
 .annonce_img{
   top : 0%;
@@ -755,6 +753,35 @@ img{
   height : 13px;
   width : 74px;
   background-color: #F7B722;
+}
+.annonce_page_car_elts{
+  padding-top : 33px;
+  font-size: 1.2em;
+  display : flex;
+  flex-direction : row;
+  flex-wrap : wrap;
+  text-align: center;
+}
+.annonce_page_car_elt{
+
+  margin-right : 18px;
+  margin-bottom : 18px;
+}
+.annonce_page_car_elt_title{
+  background-color: #8B8B8B;
+  border-radius: 15px 15px 0px 0px;
+  padding-top : 5px;
+  padding-left : 8px;
+  padding-right : 8px;
+  padding-bottom : 2px;
+}
+.annonce_page_car_elt_value{
+  background-color: #BDBDBD;
+  border-radius: 0px 0px 15px 15px;
+  padding-top : 2px;
+  padding-left : 8px;
+  padding-right : 8px;
+  padding-bottom : 5px;
 }
 .rdv{
   padding-top : 10px;
@@ -980,3 +1007,19 @@ img{
   justify-content: center;
   cursor : pointer;
 }
+.footer_hide {
+  display : none;
+}
+@media screen and (max-width: 768px) {
+  .footer_container{
+    width : 90%;
+  }
+  .footer_cats{
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+@media screen and (max-width: 992px) {
+  .footer_cat_elt{
+    display : none;
+  }

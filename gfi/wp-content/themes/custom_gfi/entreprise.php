@@ -179,7 +179,8 @@ get_header();
   }
 </script>
 
-
+</div>
+<div class = "footer_hide">
 <?php
 get_footer();
 ?>

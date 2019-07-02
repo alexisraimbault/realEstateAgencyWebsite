@@ -97,6 +97,118 @@ get_header();
         <div class = "annonce_page_car_container">
           <div class = "annonce_page_car_title">caractéristiques</div>
           <div class = "annonce_page_car_line"></div>
+          <div class = "annonce_page_car_elts">
+            <?php $superficie = get_post_meta(get_the_ID(), '_superficie', true);
+            if( $superficie ){?>
+              <div class = "annonce_page_car_elt">
+                <div class = "annonce_page_car_elt_title">superficie</div>
+                <div class = "annonce_page_car_elt_value"><?php echo $superficie ?> m2</div>
+              </div>
+            <?php } ?>
+            <?php $nb_pieces = get_post_meta(get_the_ID(), '_nb_pieces', true);
+            if( $nb_pieces ){?>
+              <div class = "annonce_page_car_elt">
+                <div class = "annonce_page_car_elt_title">pieces</div>
+                <div class = "annonce_page_car_elt_value"><?php echo $nb_pieces ?> </div>
+              </div>
+            <?php } ?>
+            <?php $nb_chambres = get_post_meta(get_the_ID(), '_nb_chambres', true);
+            if( $nb_chambres ){?>
+              <div class = "annonce_page_car_elt">
+                <div class = "annonce_page_car_elt_title">chambres</div>
+                <div class = "annonce_page_car_elt_value"><?php echo $nb_chambres ?> </div>
+              </div>
+            <?php } ?>
+
+            <?php $superficie = get_post_meta(get_the_ID(), '_superficie', true);
+            if( $superficie ){?>
+              <div class = "annonce_page_car_elt">
+                <div class = "annonce_page_car_elt_title">superficie</div>
+                <div class = "annonce_page_car_elt_value"><?php echo $superficie ?> m2</div>
+              </div>
+            <?php } ?>
+            <?php $nb_pieces = get_post_meta(get_the_ID(), '_nb_pieces', true);
+            if( $nb_pieces ){?>
+              <div class = "annonce_page_car_elt">
+                <div class = "annonce_page_car_elt_title">pieces</div>
+                <div class = "annonce_page_car_elt_value"><?php echo $nb_pieces ?> </div>
+              </div>
+            <?php } ?>
+            <?php $nb_chambres = get_post_meta(get_the_ID(), '_nb_chambres', true);
+            if( $nb_chambres ){?>
+              <div class = "annonce_page_car_elt">
+                <div class = "annonce_page_car_elt_title">chambres</div>
+                <div class = "annonce_page_car_elt_value"><?php echo $nb_chambres ?> </div>
+              </div>
+            <?php } ?>
+
+            <?php $superficie = get_post_meta(get_the_ID(), '_superficie', true);
+            if( $superficie ){?>
+              <div class = "annonce_page_car_elt">
+                <div class = "annonce_page_car_elt_title">superficie</div>
+                <div class = "annonce_page_car_elt_value"><?php echo $superficie ?> m2</div>
+              </div>
+            <?php } ?>
+            <?php $nb_pieces = get_post_meta(get_the_ID(), '_nb_pieces', true);
+            if( $nb_pieces ){?>
+              <div class = "annonce_page_car_elt">
+                <div class = "annonce_page_car_elt_title">pieces</div>
+                <div class = "annonce_page_car_elt_value"><?php echo $nb_pieces ?> </div>
+              </div>
+            <?php } ?>
+            <?php $nb_chambres = get_post_meta(get_the_ID(), '_nb_chambres', true);
+            if( $nb_chambres ){?>
+              <div class = "annonce_page_car_elt">
+                <div class = "annonce_page_car_elt_title">chambres</div>
+                <div class = "annonce_page_car_elt_value"><?php echo $nb_chambres ?> </div>
+              </div>
+            <?php } ?>
+
+            <?php $superficie = get_post_meta(get_the_ID(), '_superficie', true);
+            if( $superficie ){?>
+              <div class = "annonce_page_car_elt">
+                <div class = "annonce_page_car_elt_title">superficie</div>
+                <div class = "annonce_page_car_elt_value"><?php echo $superficie ?> m2</div>
+              </div>
+            <?php } ?>
+            <?php $nb_pieces = get_post_meta(get_the_ID(), '_nb_pieces', true);
+            if( $nb_pieces ){?>
+              <div class = "annonce_page_car_elt">
+                <div class = "annonce_page_car_elt_title">pieces</div>
+                <div class = "annonce_page_car_elt_value"><?php echo $nb_pieces ?> </div>
+              </div>
+            <?php } ?>
+            <?php $nb_chambres = get_post_meta(get_the_ID(), '_nb_chambres', true);
+            if( $nb_chambres ){?>
+              <div class = "annonce_page_car_elt">
+                <div class = "annonce_page_car_elt_title">chambres</div>
+                <div class = "annonce_page_car_elt_value"><?php echo $nb_chambres ?> </div>
+              </div>
+            <?php } ?>
+
+            <?php $superficie = get_post_meta(get_the_ID(), '_superficie', true);
+            if( $superficie ){?>
+              <div class = "annonce_page_car_elt">
+                <div class = "annonce_page_car_elt_title">superficie</div>
+                <div class = "annonce_page_car_elt_value"><?php echo $superficie ?> m2</div>
+              </div>
+            <?php } ?>
+            <?php $nb_pieces = get_post_meta(get_the_ID(), '_nb_pieces', true);
+            if( $nb_pieces ){?>
+              <div class = "annonce_page_car_elt">
+                <div class = "annonce_page_car_elt_title">pieces</div>
+                <div class = "annonce_page_car_elt_value"><?php echo $nb_pieces ?> </div>
+              </div>
+            <?php } ?>
+            <?php $nb_chambres = get_post_meta(get_the_ID(), '_nb_chambres', true);
+            if( $nb_chambres ){?>
+              <div class = "annonce_page_car_elt">
+                <div class = "annonce_page_car_elt_title">chambres</div>
+                <div class = "annonce_page_car_elt_value"><?php echo $nb_chambres ?> </div>
+              </div>
+            <?php } ?>
+            
+          </div>
         </div>
       </div>
   <?php endwhile;
@@ -106,7 +218,6 @@ get_header();
 		wp_reset_postdata();
     ?>
   </div>
-</div>
 <script>
 var slideIndex = 0;
 showSlide(slideIndex);
