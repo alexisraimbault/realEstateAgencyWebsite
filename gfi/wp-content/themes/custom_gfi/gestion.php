@@ -32,10 +32,10 @@ get_header();
         <div class = "gestion_pad_1_image"></div>
         <div class = "gestion_pad_content">
           <div class = "gestion_pad_title">GESTION LOCATIVE</div>
-          <div class = "gestion_pad_subtitle">Confiez la gestion de votre bien à GFI CONSEIL</div>
+          <div class = "gestion_pad_subtitle">Confiez la gestion de votre bien à GFI IMMOBILIER</div>
           <div class = "gestion_pad_line"></div>
           <div class = "gestion_pad_text">
-            En vous tournant vers GFI CONSEIL, vous bénéficiez de toute notre expérience en matière d’administration de biens immobiliers à usage d’habitation, commerciaux et industriels.
+            En vous tournant vers GFI IMMOBILIER, vous bénéficiez de toute notre expérience en matière d’administration de biens immobiliers à usage d’habitation, commerciaux et industriels.
           </div>
           <div class = "gestion_pad_text">
             Nous vous aidons à rentabiliser au mieux votre investissement et vous conseillons sur toutes les questions d’ordres fiscales et patrimoniales.
@@ -55,7 +55,7 @@ get_header();
             En effet, nous deviendrons le seul intermédiaire entre vous et le locataire.
           </div>
           <div class = "gestion_pad_text">
-            Le locataire ne connaîtra alors que GFI CONSEIL.
+            Le locataire ne connaîtra alors que GFI IMMOBILIER.
           </div>
           <div class = "gestion_pad_text">
             Il nous règlera son loyer qui vous sera reversé mensuellement accompagné d’un compte rendu de gérance.
@@ -96,7 +96,7 @@ get_header();
         </div>
       </div>
       <div class = "gestion_ccl">
-        Alors n’hésitez plus ! Rejoignez GFI CONSEIL un cabinet d’administration de biens connu et reconnu, car 30 ans d’expérience feront toujours la différence !
+        Alors n’hésitez plus ! Rejoignez GFI IMMOBILIER un cabinet d’administration de biens connu et reconnu, car 30 ans d’expérience feront toujours la différence !
       </div>
     </div>
 <?php

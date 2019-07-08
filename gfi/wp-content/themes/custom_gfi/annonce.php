@@ -78,7 +78,7 @@ get_header();
         <div class = "preview_container">
         <?php for($i = 0, $j = count($images_ids); $i < $j;$i++ ){
           ?>
-          <div class="slide_preview_wrapper" onclick="showSlide(<?php echo $i ?>)">
+          <div class="slide_preview_wrapper" onmouseover="showSlide(<?php echo $i ?>)">
             <img src="<?php echo wp_get_attachment_image_url($images_ids[$i]);?>" class = "slide_preview">
           </div>
         <?php } ?>
@@ -207,7 +207,7 @@ get_header();
                 <div class = "annonce_page_car_elt_value"><?php echo $nb_chambres ?> </div>
               </div>
             <?php } ?>
-            
+
           </div>
         </div>
       </div>

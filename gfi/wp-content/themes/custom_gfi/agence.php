@@ -31,10 +31,10 @@ get_header();
       <div class = "gestion_pad">
         <div class = "gestion_pad_1_image"></div>
         <div class = "gestion_pad_content">
-          <div class = "gestion_pad_subtitle">AGENCE IMMOBILIÈRE MONTREUIL : GFI CONSEIL</div>
+          <div class = "gestion_pad_subtitle">AGENCE IMMOBILIÈRE MONTREUIL : GFI IMMOBILIER</div>
           <div class = "gestion_pad_line"></div>
           <div class = "gestion_pad_text">
-            L'équipe de l'agence GFI Conseil vous accueille au cœur de Montreuil et vous accompagne dans votre projet immobilier sur Montreuil, la Croix de Chavaux, Bagnolet et tout l'Est parisien. Notre agence s'attache, depuis sa création il y a plus de 30 ans, à répondre aux attentes de ses clients en privilégiant avant tout l'écoute.
+            L'équipe de l'agence GFI Immobilier vous accueille au cœur de Montreuil et vous accompagne dans votre projet immobilier sur Montreuil, la Croix de Chavaux, Bagnolet et tout l'Est parisien. Notre agence s'attache, depuis sa création il y a plus de 30 ans, à répondre aux attentes de ses clients en privilégiant avant tout l'écoute.
           </div>
           <div class = "gestion_pad_text">
           Elle a bâti son succès sur l'expérience et le savoir-faire des membres de son équipe mais surtout sur ses aptitudes à cerner les besoins des personnes qui ont choisi de pousser sa porte.
@@ -48,7 +48,7 @@ get_header();
           <div class = "gestion_pad_subtitle">QUI SOMMES-NOUS</div>
           <div class = "gestion_pad_line"></div>
           <div class = "gestion_pad_text">
-            DEPUIS 35 ANS, notre agence, GFI CONSEIL gère, loue et vend tous les types de biens immobiliers à Montreuil et ses environs.
+            DEPUIS 30 ANS, notre agence, GFI IMMOBILIER gère, loue et vend tous les types de biens immobiliers à Montreuil et ses environs.
           </div>
           <div class = "gestion_pad_text">
           Nous sommes installés dans un immeuble indépendant sur trois niveaux, au 36, rue de Paris, à l’angle de la place du Marché et au pied de la Station de Métro « Croix de Chavaux ».
@@ -67,7 +67,7 @@ get_header();
             NOTRE SERVICE GESTION DE PATRIMOINE est composé de 7 personnes qui gèrent et louent le portefeuille de biens immobiliers composé d’appartements, de maisons, de locaux commerciaux, de locaux industriels et de bureaux.
           </div>
           <div class = "gestion_pad_text">
-            NOTRE SERVICE IMMOBILIER D'ENTREPRISE est une particularité historique de GFI CONSEIL. Nous louons et vendons des bureaux, des entrepôts, des lofts, des ateliers, des droits au bail et des commerces.
+            NOTRE SERVICE IMMOBILIER D'ENTREPRISE est une particularité historique de GFI IMMOBILIER. Nous louons et vendons des bureaux, des entrepôts, des lofts, des ateliers, des droits au bail et des commerces.
           </div>
           <div class = "gestion_pad_text">
             NOTRE SERVICE PROMOTION IMMOBILIÉRE ET MARCHANDS DE BIEN
@@ -86,7 +86,7 @@ get_header();
           <div class = "gestion_pad_subtitle">NOS COORDONNÉES</div>
           <div class = "gestion_pad_line"></div>
           <div class = "gestion_pad_text">
-            GFI CONSEIL
+            GFI IMMOBILIER
           </div>
           <div class = "gestion_pad_text">
             36 rue de Paris BP 137
@@ -96,6 +96,9 @@ get_header();
           </div>
           <div class = "gestion_pad_text">
             0148598484
+          </div>
+          <div class = "gestion_pad_text">
+            contact@gfi-immo.com
           </div>
         </div>
       </div>

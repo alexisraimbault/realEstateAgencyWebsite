@@ -228,7 +228,7 @@ a:after {
   border-bottom-width: 5px;
   border-color:#454545;
   position: absolute;
-  background-image:url('gestion_img_big.jpg');
+  background-image:url('vente_big.jpg');
   background-size: cover;
 }
 .image2{
@@ -242,7 +242,7 @@ a:after {
   border-bottom-width: 5px;
   border-color: #454545;
   position: absolute;
-  background-image:url('vente_img_big.jpg');
+  background-image:url('location_big.jpg');
   background-size: cover;
 }
 .image3{
@@ -256,7 +256,7 @@ a:after {
   border-top-width: 5px;
   border-color: #454545;
   position: absolute;
-  background-image:url('location_img_big.jpg');
+  background-image:url('entreprise_big.jpg');
   background-size: cover;
 }
 .image4{
@@ -270,7 +270,175 @@ a:after {
   border-top-width: 5px;
   border-color: #454545;
   position: absolute;
-  background-image:url('entreprise_img_big.jpg');
+  background-image:url('gestion_big.jpg');
+  background-size: cover;
+}
+.image1v{
+  top: 0%;
+  left: 0%;
+  width : 50%;
+  height : 50%;
+  border-style: solid;
+  border-width: 0px;
+  border-right-width: 5px;
+  border-bottom-width: 5px;
+  border-color:#454545;
+  position: absolute;
+  background-image:url('vente_maison_big.jpg');
+  background-size: cover;
+}
+.image2v{
+  top: 0%;
+  left: 50%;
+  width : 50%;
+  height : 50%;
+  border-style: solid;
+  border-width: 0px;
+  border-left-width: 5px;
+  border-bottom-width: 5px;
+  border-color: #454545;
+  position: absolute;
+  background-image:url('vente_appt_big.jpg');
+  background-size: cover;
+}
+.image3v{
+  top: 50%;
+  left: 0%;
+  width : 50%;
+  height : 50%;
+  border-style: solid;
+  border-width: 0px;
+  border-right-width: 5px;
+  border-top-width: 5px;
+  border-color: #454545;
+  position: absolute;
+  background-image:url('vente_inv_big.jpg');
+  background-size: cover;
+}
+.image4v{
+  top: 50%;
+  left: 50%;
+  width : 50%;
+  height : 50%;
+  border-style: solid;
+  border-width: 0px;
+  border-left-width: 5px;
+  border-top-width: 5px;
+  border-color: #454545;
+  position: absolute;
+  background-image:url('vente_parking_big.jpg');
+  background-size: cover;
+}
+.image1l{
+  top: 0%;
+  left: 0%;
+  width : 50%;
+  height : 50%;
+  border-style: solid;
+  border-width: 0px;
+  border-right-width: 5px;
+  border-bottom-width: 5px;
+  border-color:#454545;
+  position: absolute;
+  background-image:url('location_appt_big.jpg');
+  background-size: cover;
+}
+.image2l{
+  top: 0%;
+  left: 50%;
+  width : 50%;
+  height : 50%;
+  border-style: solid;
+  border-width: 0px;
+  border-left-width: 5px;
+  border-bottom-width: 5px;
+  border-color: #454545;
+  position: absolute;
+  background-image:url('location_maison_big.jpg');
+  background-size: cover;
+}
+.image3l{
+  top: 50%;
+  left: 0%;
+  width : 50%;
+  height : 50%;
+  border-style: solid;
+  border-width: 0px;
+  border-right-width: 5px;
+  border-top-width: 5px;
+  border-color: #454545;
+  position: absolute;
+  background-image:url('location_parking_big.jpg');
+  background-size: cover;
+}
+.image4l{
+  top: 50%;
+  left: 50%;
+  width : 50%;
+  height : 50%;
+  border-style: solid;
+  border-width: 0px;
+  border-left-width: 5px;
+  border-top-width: 5px;
+  border-color: #454545;
+  position: absolute;
+  background-image:url('location_loft_big.jpg');
+  background-size: cover;
+}
+.image1e{
+  top: 0%;
+  left: 0%;
+  width : 50%;
+  height : 50%;
+  border-style: solid;
+  border-width: 0px;
+  border-right-width: 5px;
+  border-bottom-width: 5px;
+  border-color:#454545;
+  position: absolute;
+  background-image:url('entreprise_vente_big.jpg');
+  background-size: cover;
+}
+.image2e{
+  top: 0%;
+  left: 50%;
+  width : 50%;
+  height : 50%;
+  border-style: solid;
+  border-width: 0px;
+  border-left-width: 5px;
+  border-bottom-width: 5px;
+  border-color: #454545;
+  position: absolute;
+  background-image:url('entreprise_location_big.jpg');
+  background-size: cover;
+}
+.image3e{
+  top: 50%;
+  left: 0%;
+  width : 50%;
+  height : 50%;
+  border-style: solid;
+  border-width: 0px;
+  border-right-width: 5px;
+  border-top-width: 5px;
+  border-color: #454545;
+  position: absolute;
+  background-image:url('entreprise_gestion_big.jpg');
+  background-size: cover;
+}
+.image4e{
+  top: 50%;
+  left: 50%;
+  width : 50%;
+  height : 50%;
+  border-style: solid;
+  border-width: 0px;
+  border-left-width: 5px;
+  border-top-width: 5px;
+  border-color: #454545;
+  position: absolute;
+  background-image:url('entreprise_inv_big.jpg');
   background-size: cover;
 }
 .middle{
@@ -332,16 +500,52 @@ a:after {
 }
 @media screen and (max-width: 992px) {
   .image1 {
-    background-image:url('gestion_img_md.jpg');
+    background-image:url('vente_md.jpg');
   }
   .image2 {
-    background-image:url('vente_img_md.jpg');
+    background-image:url('location_md.jpg');
   }
   .image3 {
-    background-image:url('location_img_md.jpg');
+    background-image:url('entreprise_md.jpg');
   }
   .image4 {
-    background-image:url('entreprise_img_md.jpg');
+    background-image:url('gestion_md.jpg');
+  }
+  .image1v {
+    background-image:url('vente_maison_md.jpg');
+  }
+  .image2v {
+    background-image:url('vente_appt_md.jpg');
+  }
+  .image3v {
+    background-image:url('vente_inv_md.jpg');
+  }
+  .image4v {
+    background-image:url('vente_parking_md.jpg');
+  }
+  .image1l {
+    background-image:url('location_appt_md.jpg');
+  }
+  .image2l {
+    background-image:url('location_maison_md.jpg');
+  }
+  .image3l {
+    background-image:url('location_parking_md.jpg');
+  }
+  .image4l {
+    background-image:url('location_loft_md.jpg');
+  }
+  .image1e {
+    background-image:url('entreprise_vente_md.jpg');
+  }
+  .image2e {
+    background-image:url('entreprise_location_md.jpg');
+  }
+  .image3e {
+    background-image:url('entreprise_gestion_md.jpg');
+  }
+  .image4e {
+    background-image:url('entreprise_inv_md.jpg');
   }
 }
 .hamburger{
@@ -384,7 +588,7 @@ a:after {
     left: 0%;
     width : 100%;
     height : 25%;
-    background-image:url('gestion_img_sm.jpg');
+    background-image:url('vente_sm.jpg');
   }
   .image2 {
     top: 25%;
@@ -395,7 +599,7 @@ a:after {
     border-left-width: 0px;
     border-right-width: 0px;
     border-bottom-width: 5px;
-    background-image:url('vente_img_sm.jpg');
+    background-image:url('location_sm.jpg');
   }
   .image3 {
     top: 50%;
@@ -405,14 +609,119 @@ a:after {
     border-left-width: 0px;
     border-right-width: 0px;
     border-bottom-width: 5px;
-    background-image:url('location_img_sm.jpg');
+    background-image:url('entreprise_sm.jpg');
   }
   .image4 {
     top: 75%;
     left: 0%;
     width : 100%;
     height : 25%;
-    background-image:url('entreprise_img_sm.jpg');
+    background-image:url('gestion_sm.jpg');
+  }
+  .image1v {
+    top: 0%;
+    left: 0%;
+    width : 100%;
+    height : 25%;
+    background-image:url('vente_maison_sm.jpg');
+  }
+  .image2v {
+    top: 25%;
+    left: 0%;
+    width : 100%;
+    height : 25%;
+    border-top-width: 5px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 5px;
+    background-image:url('vente_appt_sm.jpg');
+  }
+  .image3v {
+    top: 50%;
+    left: 0%;
+    width : 100%;
+    height : 25%;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 5px;
+    background-image:url('vente_inv_sm.jpg');
+  }
+  .image4v {
+    top: 75%;
+    left: 0%;
+    width : 100%;
+    height : 25%;
+    background-image:url('vente_parking_sm.jpg');
+  }
+  .image1l {
+    top: 0%;
+    left: 0%;
+    width : 100%;
+    height : 25%;
+    background-image:url('location_appt_sm.jpg');
+  }
+  .image2l {
+    top: 25%;
+    left: 0%;
+    width : 100%;
+    height : 25%;
+    border-top-width: 5px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 5px;
+    background-image:url('location_maison_sm.jpg');
+  }
+  .image3l {
+    top: 50%;
+    left: 0%;
+    width : 100%;
+    height : 25%;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 5px;
+    background-image:url('location_parking_sm.jpg');
+  }
+  .image4l {
+    top: 75%;
+    left: 0%;
+    width : 100%;
+    height : 25%;
+    background-image:url('location_loft_sm.jpg');
+  }
+  .image1e {
+    top: 0%;
+    left: 0%;
+    width : 100%;
+    height : 25%;
+    background-image:url('entreprise_vente_sm.jpg');
+  }
+  .image2e {
+    top: 25%;
+    left: 0%;
+    width : 100%;
+    height : 25%;
+    border-top-width: 5px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 5px;
+    background-image:url('entreprise_location_sm.jpg');
+  }
+  .image3e {
+    top: 50%;
+    left: 0%;
+    width : 100%;
+    height : 25%;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 5px;
+    background-image:url('entreprise_gestion_sm.jpg');
+  }
+  .image4e {
+    top: 75%;
+    left: 0%;
+    width : 100%;
+    height : 25%;
+    background-image:url('entreprise_inv_sm.jpg');
   }
   .menu{
     visibility: hidden;
