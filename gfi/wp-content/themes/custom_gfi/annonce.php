@@ -102,7 +102,7 @@ get_header();
             if( $tmp ){?>
               <div class = "annonce_page_car_elt">
                 <div class = "annonce_page_car_elt_title">superficie</div>
-                <div class = "annonce_page_car_elt_value"><?php echo $tmp ?> m2</div>
+                <div class = "annonce_page_car_elt_value"><?php echo $tmp ?> m<sup>2</sup></div>
               </div>
             <?php } ?>
             <?php $tmp = get_post_meta(get_the_ID(), '_nb_pieces', true);
@@ -141,7 +141,7 @@ get_header();
             if( $tmp ){?>
               <div class = "annonce_page_car_elt">
                 <div class = "annonce_page_car_elt_title">terrain</div>
-                <div class = "annonce_page_car_elt_value"><?php echo $tmp ?> m2</div>
+                <div class = "annonce_page_car_elt_value"><?php echo $tmp ?> m<sup>2</sup></div>
               </div>
             <?php } ?>
             <?php $tmp = get_post_meta(get_the_ID(), '_nb_sdb', true);
@@ -259,7 +259,7 @@ get_header();
             if( $tmp ){?>
               <div class = "annonce_page_car_elt">
                 <div class = "annonce_page_car_elt_title">balcons</div>
-                <div class = "annonce_page_car_elt_value"><?php echo $tmp ?> m2</div>
+                <div class = "annonce_page_car_elt_value"><?php echo $tmp ?> m<sup>2</sup></div>
               </div>
             <?php } ?>
 
@@ -532,7 +532,7 @@ get_header();
               }?>
               <div class = "annonce_page_car_elt">
                 <div class = "annonce_page_car_elt_title">Consommations énergétiques</div>
-                <div class = "annonce_page_car_elt_value"><?php echo $tmp ?>kWhEP/m²/an</div>
+                <div class = "annonce_page_car_elt_value"><?php echo $tmp ?>kWhEP/m<sup>2</sup>/an</div>
               </div>
             <?php } ?>
 
@@ -561,7 +561,7 @@ get_header();
               }?>
               <div class = "annonce_page_car_elt">
                 <div class = "annonce_page_car_elt_title">Emissions de gaz à effet de serre</div>
-                <div class = "annonce_page_car_elt_value"><?php echo $tmp ?>kgeqCO2/m2/an</div>
+                <div class = "annonce_page_car_elt_value"><?php echo $tmp ?>kgeqCO2/m<sup>2</sup>/an</div>
               </div>
             <?php } ?>
 

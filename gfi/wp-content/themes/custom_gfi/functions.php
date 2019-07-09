@@ -537,6 +537,7 @@ function woocommerce_product_custom_fields()
            'desc_tip'    => 'true'
        )
      );
+
     echo '</div>';
 }
 
@@ -735,7 +736,6 @@ function woocommerce_product_custom_fields_save($post_id)
 
     // Custom Product Textarea Field
     $woocommerce_exclu = $_POST['_exclu'];
-    if (!empty($woocommerce_exclu))
       update_post_meta($post_id, '_exclu', esc_attr($woocommerce_exclu));
 }
 ?>

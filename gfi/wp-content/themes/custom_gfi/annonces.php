@@ -54,6 +54,11 @@ get_header();
         if( $superficie ){?>
           <div class = "annonce_superficie"><?php echo $superficie ?> m<sup>2</sup></div>
         <?php } ?>
+        <?php $exclu = get_post_meta(get_the_ID(), '_exclu', true);
+        if( $exclu ){
+          if ($exclu == "yes"){ ?>
+          <div class = "annonce_superficie"> test</div>
+        <?php }} ?>
         <div class="annonce_price"><?php echo $product->get_price_html(); ?></div>
       </div>
   </div></div>
